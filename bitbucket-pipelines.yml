@@ -1,0 +1,32 @@
+#for your build environment.
+image: qdata/qciagent
+
+pipelines:
+    branches: #The branch section is a container for all branch-specific pipelines
+        master:
+            - step:
+                script:
+                    - export FTPUSER=$FTPUSER
+                    - export FTPPSWD=$FTPPSWD
+                    - export FTPHOST=$FTPHOST
+                    - export DESTFOLDER=$DESTFOLDER
+                    - rm --recursive -f node_modules
+                    - python -V
+                    - python /cmdtools/deploytools/deploy.py -v -un -m ftp -u $FTPUSER -p $FTPPSWD -s $FTPHOST -f $DESTFOLDER -g .
+                    - echo "Desplegado en produccion"
+                    
+        stage:
+            - step:
+                script:
+                    - export STGFTPUSER=$STGFTPUSER
+                    - export STGFTPPSWD=$STGFTPPSWD
+                    - export STGFTPHOST=$STGFTPHOST
+                    - export STGDESTFOLDER=$STGDESTFOLDER
+                    - rm --recursive -f node_modules
+                    - python -V
+                    - python /cmdtools/deploytools/deploy.py -v -un -m ftp -u $STGFTPUSER -p $STGFTPPSWD -s $STGFTPHOST -f $STGDESTFOLDER -g .
+                    - echo "Desplegado en stage"
+    default:
+        - step:
+            script:
+                - echo "Running on the default job"
