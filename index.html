@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+      <title>Cusezar Tusset</title>
+      <link rel="icon" href="image/fevicon.png" type="fevicon.png">
+      <link rel="stylesheet" href="css/normalize.css">
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/bootstrap.css">
+      <link rel="stylesheet" href="css/lightbox.min.css" />
+      <link href="slider/js-image-slider.css" rel="stylesheet" type="text/css" />
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/responsive.css">
+      <link rel="stylesheet" href="fonts/fonts.css">
+      <link rel="stylesheet" href="fonts/font-awesome.css" />
+      <link rel="stylesheet" href="css/latofonts.css">
+      <script src='https://www.google.com/recaptcha/api.js?onload=myCallBack&render=explicit'></script>
+      <style>
+         #map {
+         height: 400px;
+         position: relative;
+         width: 100%;
+         }
+         .maps-frame {
+         height: 430px;
+         width: 100%;
+         }
+      </style>
+	  
+   </head>
+   <body>
+      <div class="container-fluid">
+         <div class="menu-nav">
+            <nav class="navbar navbar-inverse navbar-fixed-top menu-custom js__navigator_banner" role="navigation" id="sticky">
+               <div class="container">
+                  <!-- Brand and toggle get grouped for better mobile display -->
+                  <div class="navbar-header col-md-2">
+                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                     <span class="sr-only">Toggle navigation</span>
+                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                     </button>
+                     <a class="navbar-brand" href="#inicio">
+                     <img src="image/logo_new.png" alt="">
+                     </a>
+                  </div>
+                  <!-- Collect the nav links, forms, and other content for toggling -->
+                  <div class="collapse navbar-collapse col-xs-10 " id="bs-example-navbar-collapse-1">
+                     <ul class="nav navbar-nav">
+                        <li><a href="#album-de-proyecto" class="menu-icon-1">DESCRIPCIÓN DE PROYECTO</a></li>
+                        <li><a href="#espacios-que-enamoran" class="menu-icon-2"><span>GALERÍA DE FOTOS</a></li>
+                        <li><a href="#conoce-nuestros-apartamentos" class="menu-icon-3 width-third">Conoce los apartamentos</a></li>
+                        <li><a href="#album-de-fotos1" class="menu-icon-1">Lugares para enamorarse</a></li>
+                        <li><a href="#mas-cerca-de-la-tranquilidad" class="menu-icon-4">UBICACIÓN DE PROYECTO</a></li>
+                        <li>
+                           <div class="contact-button">
+                              <button type="button" class="btn btn-success" id="contnt-btn">contacto</button>
+                              <div class="pupup-form">
+                                 <span class="close-icon clearfix"><img src="image/close.png"/></span>
+                                 <div class="form-section">
+                                    <h2>Lorem ipsum ullam corper aliquam</h2>
+                                    <p>euismod, maecenas quisque</p>
+                                    <div class="message">
+                                       <script>
+                                          var myParam  = location.search.split('success1=')[1]
+                                          /*alert(myParam);*/
+                                          if(myParam =="true"){
+                                              var success="Información enviada";
+                                              /*alert(success);*/
+                                              document.write(success);
+                                          } 
+                                       </script> 
+                                    </div>
+                                    <form role="form"  class="from-type" name="myForm1"  action="validation2.php" method="post">
+                                       <div class="form-group col-md-12">
+                                          <div class="col-md-3">
+                                             <label for="fild1">Nombre completo</label>
+                                          </div>
+                                          <div class="col-md-9">
+                                             <input type="text"  name="fild1" class="form-control" autocomplete="off">
+                                          </div>
+                                       </div>
+                                       <div class="form-group col-md-12">
+                                          <div class="col-md-3">
+                                             <label for="fild2">Correo Electrónico</label>                     
+                                          </div>
+                                          <div class="col-md-9">
+                                             <input type="email" name="fild2" class="form-control" id="email-val1" autocomplete="off">
+                                          </div>
+                                       </div>
+                                       <div class="form-group col-md-12">
+                                          <div class="col-md-3">
+                                             <label for="fild3">Teléfono</label>
+                                          </div>
+                                          <div class="col-md-9">
+                                             <input type="number" onKeyPress="return isNumberKey(event)" name="fild3" class="form-control" autocomplete="off">
+                                          </div>
+                                       </div>
+                                       <div class="form-group col-md-12">
+                                          <div class="col-md-3">
+                                             <label for="fild4">Celular</label> 
+                                          </div>
+                                          <div class="col-md-9">
+                                             <input type="number" name="fild4" onKeyPress="return isNumberKey(event)" class="form-control" autocomplete="off">
+                                          </div>
+                                       </div>
+                                       <div class="checkbox col-md-12 text-center">
+                                          <label>
+                                          <input type="checkbox" name="fild5" checked><a class="leg" href="http://www.cusezar.com/terminos_cusezar.html" target="_blank"> Acepto términos y condiciones</a></label>
+                                       </div>
+                                       <div class="col-md-12 col-xs-12  text-center">
+                                          <label for="check">
+                                             <div id="recaptcha1" style="transform:scale(0.77);-webkit-transform:scale(0.77);transform-origin:center center;-webkit-transform-origin:center center;"></div>
+                                             <!-- <div class="g-recaptcha" data-sitekey="6LcZdCcTAAAAAA_WgkrVACqhcPgbBGoQgTCrCrqy"></div>-->
+                                          </label>
+                                       </div>
+                                       <div class="left-right-padding form-group center-block col-md-12 ">
+                                          <button type="submit" class="btn btn-default text-center">CONTÁCTANOS</button>
+                                       </div>
+                                    </form>
+                                 </div>
+                              </div>
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+                  <!-- /.navbar-collapse -->
+               </div>
+               <!-- /.container -->
+            </nav>
+         </div>
+      </div>
+      <!-- Page Content -->
+      <section id="inicio" class="container-fluid four-section top-slider">
+         <div id="carousel-example" class="carousel slide clearfix" data-ride="carousel">
+            <!-- <ol class="carousel-indicators">
+               <li data-target="#carousel-example" data-slide-to="0" class="active"></li>
+               <li data-target="#carousel-example" data-slide-to="1"></li>
+               <li data-target="#carousel-example" data-slide-to="2"></li>
+               <li data-target="#carousel-example" data-slide-to="3"></li>
+               </ol> -->
+            <div class="carousel-inner">
+               <div class="item  active">
+                  <img src="image/slider/main-desktop/CUS-PLM-AEREA-01.jpg" alt="" class="fullwidth-xs" data-video="#" data-toggle="modal" data-target="#bannerModal"/>
+                  <!-- <img src="images/banner_img_1_rev.png" alt="" class="responsive-xs" data-video="https://www.youtube.com/embed/zIiQMHIVbhU" data-toggle="modal" data-target="#bannerModal" /> -->
+                  <div class="container">
+                     <div class="carousel-caption">
+                        <h3>Una gran oportunidad</h3>
+                        <br>
+                        <h3>para vivir cerca</h3>
+                        <br>
+                        <h3>de donde quieres</h3>
+                        <div class="img_360"><img src="image/360.png" alt="360" class="img-responsive"></div>
+                     </div>
+                  </div>
+               </div>
+               <div class="item">
+                  <img src="image/slider/main-desktop/CUS-PLM-AEREA-02.jpg" alt="" class="fullwidth-xs" data-video="#" data-toggle="modal" data-target="#bannerModal"/>
+                  <div class="container">
+                     <div class="carousel-caption">
+                        <h3>Una gran oportunidad</h3>
+                        <br>
+                        <h3>para vivir cerca</h3>
+                        <br>
+                        <h3>de donde quieres</h3>
+                        <div class="img_360"><img src="image/360.png" alt="360" class="img-responsive"></div>
+                     </div>
+                  </div>
+               </div>
+             <!--   <div class="item">
+                  <img src="image/slider/main-desktop/fachada_principal.jpg" alt="" class="fullwidth-xs" data-video="#" data-toggle="modal" data-target="#bannerModal"/>
+                  <div class="container">
+                     <div class="carousel-caption">
+                        <h3>Una gran oportunidad</h3>
+                        <br>
+                        <h3>para vivir cerca</h3>
+                        <br>
+                        <h3>de donde quieres</h3>
+                        <div class="img_360"><img src="image/360.png" alt="360" class="img-responsive"></div>
+                     </div>
+                  </div>
+               </div> -->
+              <!--  <div class="item">
+                  <img src="image/slider/main-desktop/golfito.jpg" alt="" class="fullwidth-xs" data-video="#" data-toggle="modal" data-target="#bannerModal"/>
+                  <div class="container">
+                     <div class="carousel-caption">
+                        <h3>Una gran oportunidad</h3>
+                        <br>
+                        <h3>para vivir cerca</h3>
+                        <br>
+                        <h3>de donde quieres</h3>
+                        <div class="img_360"><img src="image/360.png" alt="360" class="img-responsive"></div>
+                     </div>
+                  </div>
+               </div> -->
+            </div>
+            <a class="left carousel-control" href="#carousel-example" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+         </div>
+      </section>
+      <section id="conoce-el-proyecto" class="container-fluid second-section">
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-3 col-xs-12 center-block icon-block">
+                  <img src="image/section-section-icon-1.png" class="img-responsive center-block" />
+                  <ul>
+                     <li class="text-bold">Estrato</li>
+                     <li>4</li>
+                  </ul>
+               </div>
+               <div class="col-sm-3 col-xs-12 center-block icon-block">
+                  <img src="image/section-section-icon-2.png" class="img-responsive center-block" />
+                  <ul>
+                     <li class="text-bold">Torres</li>
+                     <li>2</li>
+                  </ul>
+               </div>
+               <div class="col-sm-3 col-xs-12 center-block icon-block">
+                  <img src="image/section-section-icon-3.png" class="img-responsive center-block" />
+                  <ul>
+                     <li class="text-bold">Apartamenos por piso</li>
+                     <li>4</li>
+                  </ul>
+               </div>
+               <div class="col-sm-3 col-xs-12 center-block icon-block">
+                  <img src="image/section-section-icon-4.png" class="img-responsive center-block" />
+                  <ul>
+                     <li class="text-bold">Pisos</li>
+                     <li>9</li>
+                  </ul>
+               </div>
+               <div class="col-sm-3 col-xs-12 center-block icon-block">
+                  <img src="image/section-section-icon-5.png" class="img-responsive center-block" />
+                  <ul>
+                     <li class="text-bold">Ascensores</li>
+                     <li>1</li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </section>
+	  <section class="container-fluid new-section">
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-4 col-xs-12 center-block">
+                  <h3>Un amigo que te entiende/ <br>Asesórate con un amigo </h3>
+                  <p><strong>Carolina Salazar Rodríguez </strong><br><small><a href="mailto:puertotranquilo@cusezar.com">puertotranquilo@cusezar.com</a></small></p>
+               </div>
+               <div class="col-sm-4 col-xs-12 center-block">
+                  <h3>Club House con restaurante <br>equipado</h3>
+               </div>
+               <div class="col-sm-4 col-xs-12 center-block">
+                  <h3>Parque acuático infantil</h3>
+               </div>
+            </div>
+            <div class="row sub-legal-info">
+               PARQUEADEROS: <br>En la plazoleta y según el área y la asignación, los apartamentos cuentan con uno o dos parqueaderos descubiertos.
+            </div>
+            <div class="row">
+               <div class="col-sm-4 col-xs-12 center-block">
+                  <h3>Piscina grande como<br> un lago con zona de playa húmeda, </h3>
+               </div>
+               <div class="col-sm-4 col-xs-12 center-block">
+                  <h3>Canchas múltiples, 4 cachas de tenis,<br> volley playa y fútbol 5 sintética</h3>
+               </div>
+               <div class="col-sm-4 col-xs-12 center-block">
+                  <h3>3 Jacuzzis <br>3 BBQ dobles</h3>
+               </div>
+            </div>
+            <div class="row sub-legal-info">Lunes a Viernes de 9:30 a.m. a 5:30 p.m. Sabados, Domingos y festivos de 10:00 a.m a 6:00pm</div>
+         </div>
+      </section>
+	  <section id="album-de-proyecto" class="container new-section-title clearfix">
+     	 <div class="section-title-proyecto text-center">
+            <h2>CONOCE EL <span>PROYECTO</span></h2>
+             <p>El primer rayo de sol cuando sales a correr en las mañanas, ese nuevo amigo que hizo tu perro en el parque, ese juego que le enseñaste a tu hijo, ese delicioso picnic de fin de semana o el aire fresco por las mañanas. Todo es mejor cuando la naturaleza rodea tu hogar en Palermo.</p>
+         </div>
+      </section>
+	  <section id="album-de-fotos" class="container third-section clearfix">
+         <div class="section-title text-center">
+            <h2>espacios que te <span>enamoran</span></h2>
+
+         </div>
+         <div class="col-md-7 col-sm-7 fr slider-third-2">
+            <div id="four-image-slide" class="carousel slide" data-ride="carousel" data-interval="100">
+               <!-- Indicators -->
+               <ol class="carousel-indicators">
+                  <li data-target="#four-image-slide" data-slide-to="0" class="active"></li>
+                  <li data-target="#four-image-slide" data-slide-to="1"></li>
+                  <li data-target="#four-image-slide" data-slide-to="2"></li>
+                  <li data-target="#four-image-slide" data-slide-to="3"></li>
+                  <li data-target="#four-image-slide" data-slide-to="4"></li>
+                  <li data-target="#four-image-slide" data-slide-to="5"></li>
+                  <li data-target="#four-image-slide" data-slide-to="6"></li>        
+               </ol>
+               <!-- Wrapper for slides -->
+               <div class="carousel-inner">
+                  <div class="item active">
+                     <img src="image/thumbs/Aérea-fachada-frontal.jpg" alt="" class="img-responsive">
+                  </div>
+                  <div class="item">
+                     <img src="image/thumbs/Aérea-fachada-posterior.jpg" alt="" class="img-responsive">
+                  </div>
+                  <div class="item">
+                     <img src="image/thumbs/Fachada-posterior-con-parque.jpg" alt="" class="img-responsive">
+                  </div>
+                  <div class="item">
+                     <img src="image/thumbs/Fachada-principal.jpg" alt="" class="img-responsive">
+                  </div>
+                  <div class="item">
+                     <img src="image/thumbs/Localización.jpg" alt="" class="img-responsive">
+                  </div>
+                  <div class="item">
+                     <img src="image/thumbs/Salón-de-niños.jpg" alt="" class="img-responsive">
+                  </div>
+                  <div class="item">
+                     <img src="image/thumbs/Terraza-BBQ.jpg" alt="" class="img-responsive">
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col-md-5 col-sm-5 fl slider-third-1 right-title">
+            <!-- <h3>En Cassatt disfrutas de un edificio comunal de 4 pisos lleno de comodidades</h3> -->
+            <div class="right-description">
+               <ul>
+                  <li>Zonas verdes con multijuegos infantiles.</li>
+                  <li>Parqueaderos de visitantes.</li>
+                  <li>Primer piso: salón juegos para niños y 2 baños incluyendo uno para minusválidos.</li>
+                  <li>Segundo piso: salón comunal con cocineta.</li>
+                  <li>Tercer piso: Área de gimnasio y administración.</li>
+                  <li>Cuarto piso: terraza con BBQ.</li>
+                  <li>Ascensor que llega hasta el sótano.</li>
+               </ul>
+            </div>
+         </div>
+		 
+      </section>
+	  <section id="espacios-que-enamoran" class="four-section container">
+         <div class="four-sec-title">
+            <h2>GALERÍA DE <span>fotos</span></h2>
+         </div>
+         <blockquote>
+            Dicen que el amor está en los <span>detalles</span>,<br> También en nuestros acabados de <span>primera calidad</span>.
+            <blockquote class="end"></blockquote>
+         </blockquote>
+         <div id="full-width-inner" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+               <li data-target="#full-width-inner" data-slide-to="0" class="active"></li>
+               <li data-target="#full-width-inner" data-slide-to="1"></li>
+               <li data-target="#full-width-inner" data-slide-to="2"></li>
+               <li data-target="#full-width-inner" data-slide-to="3"></li>
+               <li data-target="#full-width-inner" data-slide-to="4"></li>
+               <li data-target="#full-width-inner" data-slide-to="5"></li>
+               <li data-target="#full-width-inner" data-slide-to="6"></li> 
+            </ol>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+               <div class="item active">
+                  <div class="inner-slider-1">
+                     <!-- <div class="container">
+                        <div class="right-content text-right">
+                            <h2>Una piscina <br>del tamaño <br>de un lago</h2>
+                            <p>una playa y un kiosko para <br>que disfrutes cuando quieras. <br>Todo en un solo lugar.</p>
+                        </div>
+                        </div> -->
+                  </div>
+               </div>
+               <div class="item">
+                  <div class="inner-slider-2">
+                  </div>
+               </div>
+               <div class="item">
+                  <div class="inner-slider-3">
+                  </div>
+               </div>
+               <div class="item">
+                  <div class="inner-slider-4">
+                  </div>
+               </div>
+               <div class="item">
+                  <div class="inner-slider-5">
+                  </div>
+               </div>
+               <div class="item">
+                  <div class="inner-slider-6">
+                  </div>
+               </div>
+               <div class="item">
+                  <div class="inner-slider-7">
+                  </div>
+               </div>
+            </div>
+            <!-- Controls -->
+            <a class="left carousel-control fotos-control-left" href="#full-width-inner" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="right carousel-control fotos-control-right" href="#full-width-inner" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+            <!-- <div class="container navigation-arrow">
+               <a class="left carousel-control" href="#full-width-inner" role="button" data-slide="prev">
+                   <span class="black-left" aria-hidden="true"></span>
+                   <span class="sr-only">Previous</span>
+               </a>
+               <a class="right carousel-control" href="#full-width-inner" role="button" data-slide="next">
+                   <span class="black-right" aria-hidden="true"></span>
+                   <span class="sr-only">Next</span>
+               </a>
+               </div> -->
+         </div>
+      </section>
+	     <section id="conoce-nuestros-apartamentos" class="container-fluid five-sectoion">
+         <div class="section-five-title">
+            <h2>CONOCE LOS <span>apartamentos</span></h2>
+         </div>
+         <div class="container">
+            <div class="row testimonal">
+               <div id="product-detail" class="carousel slide" data-ride="carousel">
+                  <!-- Indicators -->
+                  <ol class="carousel-indicators">
+                     <li data-target="#product-detail" data-slide-to="0" class="active"></li>
+                     <li data-target="#product-detail" data-slide-to="1"></li>
+                     
+                  </ol>
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner plans-info" role="listbox">
+                     <div class="item active">
+                        <div class="col-md-6 col-sm-6">
+                           <div class="itemTtlRed">
+                              <h2 class="title-text"> 77.5m<sup>2</sup></h2>
+                              <p class="background-txt">77.5 m² de área construida</p>
+                           </div>
+                           <div class="padding-top">
+                              <div class="col-md-5 col-xs-5 col-sm-5 mobile-view">
+                                 <ul>
+                                    <li class="text-bold">Tipo:</li>
+                                    <li>Apartamentos</li>
+                                 </ul>
+                                 <ul>
+                                    <li class="text-bold">Desde:</li>
+                                    <li>$2442,80,000 </li>
+                                 </ul>
+                                 <ul>
+                                    <li class="text-bold">Área balcón:</li>
+                                    <li>1.65m<sup>2</sup></li>
+                                 </ul>
+                              </div>
+                              <div class="col-md-6 col-xs-6 col-sm-6">
+                                 <ul>
+                                    <li class="text-bold">Área const:</li>
+                                    <li>77.5m<sup>2</sup></li>
+                                 </ul>
+                                 <ul>
+                                    <li class="text-bold">Área privada:</li>
+                                    <li>69.3m<sup>2</sup></li>
+                                 </ul>
+                                 <ul>
+                                    <li class="text-bold">Estrato:</li>
+                                    <li></li>
+                                 </ul>
+                              </div>
+                              <div class="clearfix"></div>
+                           </div>
+                           <div class="content">
+                              <span class="content-title">
+                                Apartamentos Tipo 01-08 
+                                 <div class="clearfix"></div>
+                              </span>
+                              <div class="content-detail">
+                                 <ul>
+                                    <li>Este apartamento esta compuesto por: Sala-comedor con balcón.</li>
+                                    <li>Zona de ropas independiente.</li>
+                                    <li>Mueble de linos.</li>
+                                    <li>Dos alcobas familiares.</li>
+                                    <li>Estar.</li>    
+                                    <li>Alcoba principal con vestier y  con baño privado.</li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                           <img src="image/planos_Inmuebles_Properties/plan1.png" class="img-responsive desktop"/>
+                           <img src="image/tusset_logo.png" class="img-responsive mobile"/>
+                           <div class="col-md-12 mobile-none">
+                              <div class="col-md-4 col-xs-4 col-sm-4 text-center border-right">
+                                 <img src="image/shwore.png" class="img-responsive center-block" />
+                                 <p>2<br/>Baños</p>
+                              </div>
+                              <div class="col-md-4 col-xs-4 col-sm-4 text-center border-right">
+                                 <img src="image/bed.png" class="img-responsive center-block" />
+                                 <p>3+Estar<br/>Estudio</p>
+                              </div>
+                              <div class="col-md-4 col-xs-4 col-sm-4  text-center border-right">
+                                 <img src="image/room.png" class="img-responsive center-block" />
+                                 <p>1 Sencillo, cubierto<br/>Depósito</p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-md-12 col-sm-12">
+                           <p class="legal-info-item">Cuota de admon. aprox vigente al : $0</p>
+                        </div>
+                     </div>
+                     <div class="item">
+                        <div class="col-md-6 col-sm-6">
+                           <div class="itemTtlRed">
+                              <h2 class="title-text">63.9m<sup>2</sup></h2>
+                              <p class="background-txt">63.9 m² de área construida</p>
+                           </div>
+                           <div class="padding-top">
+                              <div class="col-md-5 col-xs-5 col-sm-5 mobile-view">
+                                 <ul>
+                                    <li class="text-bold">Tipo:</li>
+                                    <li>Apartamentos</li>
+                                 </ul>
+                                 <ul>
+                                    <li class="text-bold">Desde:</li>
+                                    <li>$298,000,000</li>
+                                 </ul>
+                                 <ul>
+                                    <li class="text-bold">Área balcón:</li>
+                                    <li>3m<sup>2</sup></li>
+                                 </ul>
+                              </div>
+                              <div class="col-md-6 col-xs-6 col-sm-6">
+                                 <ul>
+                                    <li class="text-bold">Área const:</li>
+                                    <li>63.9m<sup>2</sup></li>
+                                 </ul>
+                                 <ul>
+                                    <li class="text-bold">Área privada:</li>
+                                    <li>56.8m<sup>2</sup></li>
+                                 </ul>
+                                 <ul>
+                                    <li class="text-bold">Estrato:</li>
+                                    <li></li>
+                                 </ul>
+                              </div>
+                              <div class="clearfix"></div>
+                           </div>
+                           <div class="content">
+                              <span class="content-title">
+                                 Apartamentos Tipo 03-04
+                                 <div class="clearfix"></div>
+                              </span>
+                              <div class="content-detail">
+                                 <ul>
+                                    <li>Este apartamento está compuesto por: Hall de acceso Zona de sala - comedor</li>
+                                    <li>centro de computo y salida al balcón.</li>
+                                    <li>Cocina abierta con zona de ropas independiente.</li>
+                                    <li>Hall de alcobas</li>
+                                    <li>Baño Auxiliar</li>
+                                    <li>Una alcoba auxiliar</li>
+                                    <li>Mueble de linos</li>
+                                    <li>Alcoba principal con baño y closet.</li>
+                                    <li>Todos los apartamentos incluyen un garaje y depósito.</li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                           <img src="image/planos_Inmuebles_Properties/plan2.png" class="img-responsive desktop"/>
+                           <img src="image/tusset_logo.png" class="img-responsive mobile"/>
+                           <div class="col-md-12 mobile-none">
+                              <div class="col-md-4 col-xs-4 col-sm-4 text-center border-right">
+                                 <img src="image/shwore.png" class="img-responsive center-block" />
+                                 <p>2<br/>Baños</p>
+                              </div>
+                              <div class="col-md-4 col-xs-4 col-sm-4 text-center border-right">
+                                 <img src="image/bed.png" class="img-responsive center-block" />
+                                 <p>2<br/>Estudio</p>
+                              </div>
+                              <div class="col-md-4 col-xs-4 col-sm-4  text-center border-right">
+                                 <img src="image/room.png" class="img-responsive center-block" />
+                                 <p>1<br/>Depósito</p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-md-12 col-sm-12">
+                           <p class="legal-info-item">Cuota de admon. aprox vigente al 2015: $207.320</p>
+                        </div>
+                     </div>
+                    
+                     
+                  </div>
+                  <!-- Controls -->
+                  <div class=" center-slider-arrow">
+                     <a class="left carousel-control five-sec-arrow-left mobile-off" href="#product-detail" role="button" data-slide="prev">
+                     <span class="black-left" aria-hidden="true"></span>
+                     <span class="sr-only">Previous</span>
+                     </a>
+                     <a class="right carousel-control five-sec-arrow-right mobile-off" href="#product-detail" role="button" data-slide="next">
+                     <span class="black-right" aria-hidden="true"></span>
+                     <span class="sr-only">Next</span>
+                     </a>
+                  </div>
+               </div>
+               <div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 center-block text-center padding-remove">
+                  <!-- Wrapper for slides -->
+                  <p class="legal-info-item general-legal">Los precios aquí publicados son precios vigentes a 07 de enero de 2016, no obstante, la sociedad vendedora puede modificarlos sin previo aviso. El valor mensual de la cuota de administración es estimado para el año 2015 y esta calculado por metro cuadrado de área privada. El estrato socioeconómico que tendrá el proyecto podrá estar sujeto a modificación por parte del respectivo municipio o distrito.<br>
+                  Las imágenes son representaciones digitales del diseño y junto con los inmuebles exhibidos por Cusezar pueden variar en la percepción y construcción final.</p>
+                  <a href="#">conoce más</a>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section id="album-de-fotos1" class="container third-section">
+         <div class="six-sec-title">
+            <h2>lugares para <span>enamorarse</span></h2>
+         </div>
+         <div class="six-description">
+            <p class="des">Carrera 55 con Calle 153. La Colina, cuenta con importantes vías de acceso como la Av. Boyacá, futura Av. Las Villas, Av. La Sirena (Calle 153) y las calles 134, 138 y 152.</p>
+         </div>
+         <div id="five-image-slide" class="carousel slide" data-ride="carousel" data-interval="100">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+               <li data-target="#five-image-slide" data-slide-to="0" class="active"></li>
+               <li data-target="#five-image-slide" data-slide-to="1" class=""></li>
+            </ol>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                  <div class="col-md-3 col-sm-3 col-xs-3 four-image">
+                     <a href="image/lightbox/Subazar.png" data-lightbox="lightbox1" data-title="Para esos días de compras con toda tu familia. Centros Comerciales como Subazar, Plaza Imperial, Centro Suba, además de otros pequeños puntos de comercio muy cerca de ti.">
+                     <img src="image/thumbs/Subazar.png" class="img-responsive" alt="Image description text">
+                     </a>
+                  </div>
+                  <div class="col-md-3 col-sm-3 col-xs-3 four-image">
+                     <a href="image/lightbox/Plaza-Imperial.png" data-lightbox="lightbox1" data-title="Plaza Imperial.">
+                     <img src="image/thumbs/Plaza-Imperial.png" class="img-responsive" alt="Image description text">
+                     </a>
+                  </div>
+                  <div class="col-md-3 col-sm-3 col-xs-3 four-image">
+                     <a href="image/lightbox/GOPR0421.png" data-lightbox="lightbox1" data-title="Importantes vías de acceso como la avenida Suba, la avenida Ciudad de Cali y la vía Suba-Cota.">
+                     <img src="image/thumbs/GOPR0421.png" class="img-responsive" alt="Image description text">
+                     </a>
+                  </div>
+                  <div class="col-md-3 col-sm-3 col-xs-3 four-image">
+                     <a href="image/lightbox/Centro-de-Salud.png" data-lightbox="lightbox1" data-title="La salud de tu familia es lo más importante, por eso alrededor encontrarás con clínicas, atención de urgencias y salud general para facilidad de sus habitantes.">
+                     <img src="image/thumbs/Centro-de-Salud.png" class="img-responsive" alt="Image description text"></a>
+                  </div>
+               </div>
+               <div class="item">
+                  <div class="col-md-3 col-sm-3 col-xs-3 four-image">
+                     <a href="image/lightbox/Centro-Suba.png" data-lightbox="lightbox1" data-title="Zonas peatonales para difrutar los días.">
+                     <img src="image/thumbs/Centro-Suba.png" class="img-responsive" alt="Image description text" >
+                     </a>
+                  </div>
+               </div>   
+            </div>
+         </div>
+      </section>
+      <section id="mas-cerca-de-la-tranquilidad" class="container-fluid six-sectoion six-one-section">
+         <div class="container text-center center-block">
+            <div class="row">
+               <div class="col-md-12 center-block">
+                  <!--<h2>Mas cerca de la <span class="background-txt">tranquilidad</span></h2>-->
+                  <h2>Encuéntranos aquí</h2>
+                  <div class="bottom-icon">
+                     <div class="col-md-3 col-xs-6 col-sm-6 center-block">
+                        <img class="img-responsive center-block" src="image/Encuentranos-aqui/map.png">
+                        <ul>
+                           <li class="text-bold">Dirección:</li>
+                           <li>Calle 150 A # 96 A - 90 Entrada por el conjunto, Suba-Pinar</li>
+                        </ul>
+
+                     </div>
+                     <div class="col-md-3 col-xs-6 col-sm-6 center-block">
+                        <img class="img-responsive center-block" src="image/Encuentranos-aqui/msg.png">
+                        <ul>
+                           <li class="text-bold">Email:</li>
+                           <li>Paula Sabogal <br>palermo@cusezar.com</li>
+                        </ul>
+                     </div>
+                     <div class="col-md-3 col-xs-6 col-sm-6 center-block mobile-view">
+                        <img class="img-responsive center-block" src="image/Encuentranos-aqui/clock.png">
+                        <ul>
+                           <li class="text-bold">Horario:</li>
+                           <li>Lunes a domingo de 9:30 a. m. a 5:30 p. m.</li>
+                        </ul>
+                     </div>
+                     <div class="col-md-3 col-xs-6  col-sm-6 center-block mobile-view">
+                        <img class="img-responsive center-block" src="image/Encuentranos-aqui/phone.png">
+                        <ul>
+                           <li class="text-bold">Teléfono:</li>
+                           <li>(320) 488 2813</li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="Maplocation">
+         <div id="map"></div>
+      </section>
+      <section id="seven" class="container-fluid seven-section container">
+         <div class="col-md-3 col-xs-12 col-sm-6">
+            <div class="asesor">
+               <ul>
+                  <li class="title">asesor</li>
+                  <li class="name">Paula Sabogal</li>
+                  <li><img src="image/asesor_pic.png" alt="person"></li>
+                  <li class="mail"><a href="mailto:tuset@cusezar.com">palermo@cusezar.com</a></li>
+               </ul>
+            </div>
+         </div>
+         <div class="col-md-3 col-xs-12 col-sm-6 margin-top pading">
+            <div class="tel">
+               <h6 class="title"> Teléfono:</h6>
+               <p>(320) 488 2813 </p>
+            </div>
+         </div>
+         <div class="col-md-3 col-xs-12  col-sm-6 margin-top pading">
+            <div class="hora">
+               <h6 class="title"> horario:</h6>
+               <p>Lunes a domingo <br>de 9:30 a. m. a 5:30 p. m.</p>
+            </div>
+         </div>
+         <div class="col-md-3 col-xs-12 col-sm-6 margin-top pading">
+            <div class="sala">
+               <h6 class="title">sala de ventas:</h6>
+               <p>Calle 153 con carrera 73</p>
+            </div>
+         </div>
+      </section>
+      <section class="container-fluid footer-sectoion">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-6 col-sm-6 fr">
+                  <div class="col-md-12 footer-content">
+                     <img src="image/footer-logo.png" class="img-responsive">
+                     <p>Cuando se trata de comprar hogar, en Cusezar nos ponemos en los zapatos de nuestros clientes. Pasamos días trabajando para enamorarlos, hacemos que su corazón lata tanto como el nuestro cada vez que abren la puerta de su nuevo hogar. Sabemos que es la compra más importante de sus vidas, hacemos todo para que sea perfecto, porque sabemos que la mejor compra viene de lo que dice el corazón. Cusezar. creamos valor para siempre.</p>
+                     <div class="col-md-4 col-xs-4 addressblk">
+                        <p>Av. Cll 116 N° 7 – 15 Int 2 Piso 15 y 16. </p>
+                        <p class="cityname"><b>Bogotá, Colombia</b></p>
+                        <!--<p>Ricaurte-Cundinamarca Calle 2 #18 -209 Ricaurte – Cundinamarca</p>-->
+                     </div>
+                     <div class="col-md-4 col-xs-4 addressblk">
+                        <!--<p>&nbsp;</p>
+                           <p>Carolina Salazar Rodríguez </p>
+                           <p>E-mail:</p>
+                           <p>puertotranquilo@cusezar.com</p>-->
+                        <p>Línea de atención al cliente en Bogotá: </p>
+                        <p class="contactno"><b>6516066</b></p>
+                     </div>
+                     <div class="col-md-4 col-xs-4 addressblk">
+                        <!--<p><b>Horario</b></p>
+                           <p>Lunes a Viernes de 9:30 a.m. a 5:30 p.m. Sabados, Domingos y festivos de 10:00 a.m a 6:00pm</p>-->
+                        <p>Línea de atención al cliente en Cali:</p>
+                        <p class="contactno"><b>6678884</b></p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6 col-sm-6 fl">
+                  <div class="form-section">
+                     <h2>¿Tienes preguntas? </h2>
+                     <p>Estamos listos para llamarte, resolver tus dudas y darte más
+                        información sobre nuestros proyectos. Solo déjanos tus datos. 
+                     </p>
+                     <div class="message">
+                        <script>
+                           var myParam  = location.search.split('success=')[1]
+                           /*alert(myParam);*/
+                           if(myParam =="true"){
+                               var success="Información enviada";
+                               /*alert(success);*/
+                               document.write(success);
+                           }
+                           
+                        </script>
+                     </div>
+                     <form role="form" class="from-type" name="myForm"  action="validation.php" method="post">
+                        <div class="form-group col-md-12 col-xs-12 ">
+                           <div class="col-md-2 col-xs-12 padding-remove">
+                              <label for="fild1">Nombre completo</label>
+                           </div>
+                           <div class="col-md-10 col-xs-12 pull-right">
+                              <input type="text"  name="fild1" class="form-control" autocomplete="off">
+                           </div>
+                        </div>
+                        <div class="form-group col-md-12 col-xs-12">
+                           <div class="col-md-2 col-xs-12 padding-remove">
+                              <label for="fild2">Correo Electrónico</label> 
+                           </div>
+                           <div class="col-md-10  col-xs-12 pull-right">
+                              <input type="email" name="fild2" class="form-control" id="email-val" autocomplete="off">
+                           </div>
+                        </div>
+                        <div class="form-group col-md-12 col-xs-12">
+                           <div class="col-md-2 col-xs-12 padding-remove">
+                              <label for="fild3">Teléfono</label>
+                           </div>
+                           <div class="col-md-10  col-xs-12 pull-right">
+                              <input type="number" name="fild3" onKeyPress="return isNumberKey(event)" class="form-control" autocomplete="off">
+                           </div>
+                        </div>
+                        <div class="form-group col-md-12 col-xs-12">
+                           <div class="col-md-2 col-xs-12 padding-remove">
+                              <label for="fild4">Celular</label>   
+                           </div>
+                           <div class="col-md-10  col-xs-12 pull-right">
+                              <input type="number" onKeyPress="return isNumberKey(event)" name="fild4" class="form-control" autocomplete="off">
+                           </div>
+                        </div>
+                        <div class="checkbox col-md-12 col-xs-12 text-center">
+                           <label for="fild5">
+                           <input type="checkbox" name="fild5" checked> <a href="http://www.cusezar.com/terminos_cusezar.html" target="_blank">Acepto términos y condiciones</a></label>
+                        </div>
+                        <div class="col-md-12 col-xs-12  text-center">
+                           <label for="check">
+
+                              <div id="recaptcha2" style="transform:scale(0.77);transform-origin:center"></div>
+
+                              <div id="recaptcha2" style="transform:scale(0.77);-webkit-transform:scale(0.77);transform-origin:center center;-webkit-transform-origin:center center;"></div>
+
+                              <!-- <div class="g-recaptcha" data-sitekey="6LeNKCkTAAAAAIrEffYbb_F2UHFZ-gWEsVVtGa-z"></div> -->
+                           </label>
+                        </div>
+                        <div class="form-group center-block">
+                           <button type="submit" class="btn btn-default text-center">QUIERO QUE ME LLAMEN</button>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <footer class="text-center">
+         CUSEZAR - Todos los derechos reservados 2016
+         <a href="http://www.cusezar.com/terminos_cusezar.html" target="_blank">Términos y condiciones</a>
+      </footer>
+      <!--script-->
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+      <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+      <script src="js/jquery.scrollNav.min.js"></script>
+      <script src="js/lightbox.js"></script>
+      <script src="js/main.js"></script>
+      <script src="js/bootstrap.js"></script>
+      <!-- <script src="js/script.js"></script> -->
+      <script src="js/bootstrap.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
+      <script src="js/form-validation.js"></script>
+      <script src="js/form-validation2.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="https://www.youtube.com/iframe_api"></script>
+      <script src="slider/js-image-slider.js" type="text/javascript"></script>
+      <script src="slider/mcVideoPlugin.js" type="text/javascript"></script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSyA_oa02cA0QKY-xrI-qLw4JWdHkY0-c&callback=initMap" async defer></script>
+      <!--  map section script start        -->
+      <script type="text/javascript">
+         
+      </script>
+   </body>
+</html>
+

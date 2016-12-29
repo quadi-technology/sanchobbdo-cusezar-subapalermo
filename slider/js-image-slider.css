@@ -1,0 +1,189 @@
+/* http://www.menucool.com */
+
+#sliderFrame, #sliderFrame div {
+    box-sizing: content-box;
+}
+#sliderFrame 
+{
+    position:relative;
+    background-color:white;
+    margin-top: 50px;
+
+}      
+
+#sliderlist, #sliderlist .sliderInner {
+    width:100%;
+    height:525px;/* Must be the same size as the slider images */
+    border-radius:0px;
+}
+
+#sliderlist 
+{
+    background-color:white;
+    position:relative;
+    margin:0 auto; /*center-aligned*/
+    transform: translate3d(0,0,0);
+}
+
+/* the link style (if slide image is wrapped by a link) */
+#sliderlist a.imgLink, #sliderlist .video {
+    z-index:2;
+    cursor:pointer;
+    position:absolute;
+    top:0px;left:0px;border:0;padding:0;margin:0;
+    width:100%;height:100%;
+}
+#sliderlist .video {
+    background:transparent url(video.png) no-repeat 50% 50%;
+}
+
+
+/* ------ built-in navigation bullets wrapper ------*/
+#sliderlist .navBulletsWrapper  {
+    display:none;
+}
+
+
+/* --------- Others ------- */
+
+#sliderlist img, #sliderlist>b, #sliderlist a>b {
+    position:absolute; border:none; display:none;
+}
+
+#sliderlist .sliderInner {
+    overflow:hidden;
+    position:absolute; top:0; left:0;
+}
+
+#sliderlist>a, #sliderlist video, #sliderlist audio {display:none;}
+#sliderlist div {-webkit-transform: translate3d(0,0,0);transform: translate3d(0,0,0);}
+
+
+
+/*----------- navigation buttons on both sides of the slider -----------*/
+.group1-Wrapper 
+{
+    position:absolute;
+    z-index:20;
+    /*top:120px;*/
+    top: 37%;
+    margin-left:50%;/* position it in the middle of #sliderFrame */
+   /* width:1px;*/
+}
+a.group1-Prev, a.group1-Next
+{
+    width:50px;height:150px;
+    background:transparent url(navbuttons2.gif); 
+    display:block; 
+    cursor:pointer;
+    position:absolute;
+    top:0;
+    user-select: none;
+}
+a.group1-Prev{background-position:0 0; left: -510px;}
+a.group1-Next {background-position:0 -150px;left:460px;}
+
+/*a.group1-Prev:hover{background-position:50px 0;}
+a.group1-Next:hover {background-position:50px -150px;}*/
+
+
+/* ----------- navigation buttons in the nav bar ---------- */
+a.group2-Prev, a.group2-Next, a.group2-Play, a.group2-Pause 
+{
+    width:20px; height:20px; 
+    background:transparent url(navbuttons.gif); 
+    display:inline-block; 
+    *display:inline;zoom:1;/*IE hack*/
+    margin-left:4px; margin-right:4px;
+    cursor:pointer;
+}
+a.group2-Pause{background-position:0 0;}
+a.group2-Play {background-position:0 -20px;}
+a.group2-Next {background-position:0 -40px;}
+a.group2-Prev {background-position:0 -60px;} 
+
+a.group2-Pause:hover{background-position:20px 0;}
+a.group2-Play:hover {background-position:20px -20px;}
+a.group2-Next:hover {background-position:20px -40px;}
+a.group2-Prev:hover {background-position:20px -60px;} 
+
+ a.group1-Prev{
+    background-image: url('../image/slider/white-left.png') !important;
+}
+a.group1-Next{
+    background-image: url('../image/slider/white-right.png') !important;
+}
+.group1-Wrapper a:hover{
+    opacity: 1;
+}
+.group1-Wrapper a{
+    opacity: 0.5;
+    background-position: center center;
+    height: 85px;
+    width: 46px;
+    background-repeat: no-repeat;
+}
+
+
+
+
+.Top_Slider .group1-Wrapper {
+    margin-left: 0;
+    width: 100%;
+}
+.Top_Slider .group1-Wrapper > .container{
+    position: relative;
+}
+.Top_Slider a.group1-Prev{
+        left: 60px;
+    }
+    .Top_Slider a.group1-Next{
+        right: 60px;
+        left: inherit;
+    }
+
+
+@media screen and (max-width: 640px){
+    .testimonal .carousel-indicators{
+        bottom: -3%;
+    }
+    .group1-Wrapper a{
+        background-size: 80%;
+    }
+    #sliderlist, #sliderlist .sliderInner{
+        height: 320px !important;    
+    }  
+     
+}
+@media screen and (max-width: 991px){
+    .Top_Slider .group1-Wrapper{
+        width: 100%;
+    }
+    .Top_Slider .group1-Wrapper {
+        margin-left: 0;
+    }
+    .Top_Slider a.group1-Prev{
+        left: 15px;
+    }
+    .Top_Slider a.group1-Next{
+        right:15px;
+        left: inherit;
+    }
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px){
+        .Top_Slider .group1-Wrapper{
+        width: 100%;
+    }
+    .Top_Slider .group1-Wrapper {
+        margin-left: 0;
+    }
+    .Top_Slider a.group1-Prev{
+        left: 60px ;
+    }
+    .Top_Slider a.group1-Next{
+        right: 60px ;
+        left: inherit;
+    }
+}
