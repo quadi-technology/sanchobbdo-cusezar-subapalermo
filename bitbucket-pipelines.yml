@@ -6,14 +6,13 @@ pipelines:
         master:
             - step:
                 script:
+                    - export HOST='ftp.ord1-1.websitesettings.com'
+                    - export TARGETFOLDER='/web/content'
+                    - export SOURCEFOLDER='.'
                     - export FTPUSER=$FTPUSER
                     - export FTPPSWD=$FTPPSWD
-                    - export FTPHOST=$FTPHOST
-                    - export DESTFOLDER=$DESTFOLDER
                     - rm --recursive -f node_modules
-                    - python -V
-                    - python /cmdtools/deploytools/deploy.py -v -un -m ftp -u $FTPUSER -p $FTPPSWD -s $FTPHOST -f $DESTFOLDER -g .
-                    - echo "Desplegado en produccion"
+                    - /bin/bash /deploy.bash
         stage:
             - step:
                 script:
