@@ -50,6 +50,81 @@ body {
 .navbar-inverse.menu-custom .navbar-nav> li:hover a.leg {
     background: transparent;
 }
+.flot_right{
+float:right;
+}
+.fancybox-infobar {
+    display: block !important;
+}
+.fancybox-slider-wrap {
+    max-width: 94%;
+}
+.fancybox-slider,
+.fancybox-slider-wrap {
+    width: 713px;
+    margin: 0 auto !important;
+}
+.fancybox-buttons {
+    top: -20.5vh !important;
+}
+.fancybox-button.fancybox-button--left {
+    float: left;
+}
+.fancybox-button.fancybox-button--right {
+    float: right;
+}
+.fancybox-infobar {
+    width: 100%;
+}
+.fancybox-controls {
+    top: 45vh !important;
+}
+.fancybox-buttons button.fancybox-button--close {
+    display: block !important;
+    background-color: #ea1d23;
+    opacity: 0.8;
+}
+.fancybox-buttons button.fancybox-button--play {
+    display: none !important;
+}
+.fancybox-buttons button.fancybox-button--fullscreen {
+    display: none !important;
+}
+.fancybox-buttons button.fancybox-button--thumbs {
+    display: none !important;
+}
+.fancybox-infobar__body {
+    display: none !important;
+}
+.fancybox-caption-wrap {
+    backface-visibility: hidden;
+    background: none !important;
+    bottom: 13vh !important;
+    box-sizing: border-box;
+    left: 0;
+    margin: 0 auto;
+    opacity: 0;
+    padding: 0 !important;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    transition: opacity 0.2s ease 0s;
+    width: 713px;
+    z-index: 99998;
+}
+.fancybox-caption {
+    -moz-text-size-adjust: none;
+    border-top: none !important;
+    color: #fff;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 0 !important;
+}
+.fancybox-controls {
+    width: 713px;
+    margin: 0 auto;
+}
 #fild5-error {
     left: 96px;
     position: absolute;
