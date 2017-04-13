@@ -1,4 +1,11 @@
 @media (min-width: 1350px) and (max-width: 1366px) {
+ .fancybox-buttons {
+        top: -31.8vh !important;
+    }
+ 
+    .fancybox-caption-wrap {
+        bottom: 8vh !important;
+    }
     .carousel-control.right {
         right: 160px;
     }
@@ -36,6 +43,12 @@
     }
 }
 @media (min-width: 1250px) and (max-width: 1280px) {
+.fancybox-buttons {
+    top: -31vh !important;
+} 
+.fancybox-caption-wrap {
+        bottom: 20vh !important;
+    }
     .carousel-control.left {
         left: 193px;
         top: 56%;
@@ -84,6 +97,12 @@
     }
 }
 @media only screen and (max-width: 1024px) {
+.fancybox-buttons {
+        top: -27.6vh !important;
+    }
+.fancybox-caption-wrap {
+        bottom: 10vh !important;
+    }
     .carousel-control.left {
         left: 172px;
     }
@@ -153,9 +172,22 @@
         margin-top: -48px;
     }
 }
+@media (max-width: 991px) {
+    .fancybox-controls {
+        top: 51vh !important;
+    }
+}
+@media (max-width: 886px) {
+    .fancybox-controls {
+        top: 55vh !important;
+    }
+}
 @media (max-width: 767px) {
     /*.four-section .right-content p  {font-family: 'LatoWebBold'}*/
     
+	.fancybox-caption-wrap {
+        bottom: 3vh !important;
+    }
     .navbar-header {
         float: none !important;
     }
@@ -505,62 +537,7 @@
     .menu-center .contact-button {
         margin: 0 25px
     }
-    .four-section .inner-slider-1 {
-        background-image: url('../image/slider/responsive/fachada.png');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: 0;
-        width: 100%;
-    }
-    .four-section .inner-slider-2 {
-        background-image: url('../image/slider/responsive/zonas_comunes.png');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: 0;
-        width: 100%;
-    }
-    .four-section .inner-slider-3 {
-        background-image: url('../image/slider/responsive/fachada-interior.png');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: 0;
-        width: 100%;
-    }
-    .four-section .inner-slider-4 {
-        background-image: url('../image/slider/responsive/cus-tst-apto-54,2.png');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: 0;
-        width: 100%;
-    }
-    .four-section .inner-slider-5 {
-        background-image: url('../image/slider/responsive/cus-tst-apto-63,9.png');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: 0;
-        width: 100%;
-    }
-    .four-section .inner-slider-6 {
-        background-image: url('../image/slider/responsive/cocina.png');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: 0;
-        width: 100%;
-    }
-    .four-section .inner-slider-7 {
-        background-image: url('../image/slider/responsive/sala-comedor.png');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: 0;
-        width: 100%;
-    }
-    .four-section .inner-slider-8 {
-        background-image: url('../image/slider/responsive/cus-tst-apto-65,9.png');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: 0;
-        width: 100%;
-    }
+   
     .four-section .item > div {
         min-height: 400px;
     }
@@ -624,7 +601,27 @@
         -webkit-transform-origin: 0 0;
     }
 }
+@media only screen and (min-width: 768px) and (max-width: 770px) {
+   .fancybox-buttons {
+        top: -19.4vh !important;
+    }
+    
+    .fancybox-caption-wrap {
+        bottom: 17vh !important;
+    }
+}
+@media (max-height: 571px) {
+  /*  .fancybox-controls {
+        display: none;
+    }*/
+    .fancybox-caption-wrap {
+        bottom: 2vh !important;
+    }
+}
 @media (max-width: 768px) {
+.fancybox-controls {
+        top: 45vh !important;
+    }
     .navbar > .container .navbar-brand,
     .navbar > .container-fluid .navbar-brand {
         padding: 0 0 15px 0;
@@ -666,7 +663,7 @@
         display: none;
     }
     .plans-info {
-        max-height: 738px !important;
+           max-height: 764px !important;
     }
 
     .margin-top {
@@ -683,7 +680,7 @@
     top: 40%;
     }
     .carousel-control.right {
-            right:0;
+               right: 40px;
     top: 40%;
     }
 	.second-section {
@@ -692,7 +689,7 @@
     background-size: cover;
 }
 	.carousel-control .glyphicon-chevron-right, .carousel-control .icon-next {
-    margin-right: 50px;
+    margin-right: 0px;
     width: 25px !important;
 }
 .carousel-control .glyphicon-chevron-left, .carousel-control .icon-prev {
@@ -785,7 +782,7 @@
          width: 78%;
     }
      .fotos-control-right {
-        right: 10px !important;
+        right:65px !important;
         top: 50% !important;
      }
      .fotos-control-left{
@@ -868,7 +865,7 @@
     .testimonal p.general-legal {
         display: none;
     }
-    .testimonal a {
+   .testimonal .padding-remove a  {
         display: block;
         background-color: red;
         padding: 10px 11px;
@@ -1021,6 +1018,49 @@
 }
 }
 @media only screen and (min-width: 730px) and (max-width: 736px) {
+.flot_right {
+    float: none;
+    padding-bottom: 50px;
+}
+.plans-info {
+    max-height: 822px !important;
+}
+.testimonal .padding-remove a {
+    display: block;
+    background-color: red;
+    padding: 10px 11px;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin: 30px auto;
+    font-family: 'LatoWebBold';
+    font-size: 21px;
+    letter-spacing: 1px;
+    width: 240px;
+    text-decoration: none;
+}
+.logo_image {
+    padding-top: 75px;
+}
+.fancybox-buttons {
+       top: -116px !important;
+    right: 157px !important;
+}
+.fancybox-caption-wrap {
+        width: 400px;
+    }
+    .fancybox-button.fancybox-button--left {
+        left: 156px;
+    }
+    .fancybox-button.fancybox-button--right {
+        right: 155px;
+    }
+    .fancybox-controls {
+        top: 184px !important;
+    }
+    .fancybox-slider,
+    .fancybox-slider-wrap {
+        width: 400px;
+    }
     .four-section .right-content p {
         width: 354px;
     }
@@ -1245,13 +1285,13 @@
     .testimonal p.general-legal {
         display: none;
     }
-    .testimonal a {
+   .testimonal .padding-remove a  {
         display: block;
         background-color: red;
         padding: 10px 11px;
         text-transform: uppercase;
         color: #ffffff;
-        margin: 66px auto;
+        margin: 40px auto;
         font-family: 'LatoWebBold';
         font-size: 21px;
         letter-spacing: 1px;
@@ -1380,6 +1420,34 @@
     }
 }
 @media (max-width: 640px) {
+.flot_right {
+    float: none;
+    padding-bottom: 50px;
+}
+.logo_image {
+    padding-top: 75px;
+}
+fancybox-caption-wrap {
+        bottom: 1vh !important;
+    }
+    .fancybox-buttons {
+        top: -161px !important;
+        right: 186px !important;
+    }
+    .fancybox-caption-wrap {
+        width: 400px;
+    }
+    .fancybox-button.fancybox-button--left {
+        left: 117px;
+    }
+    .fancybox-button.fancybox-button--right {
+        right: 190px;
+    }
+   
+    .fancybox-slider,
+    .fancybox-slider-wrap {
+        width: 400px;
+    }
 
 .navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
     max-height: 310px;
@@ -1467,11 +1535,11 @@
     }
      .fotos-control-right {
         right: 10px !important;
-        top: 50% !important;
+         top: 37% !important;
      }
      .fotos-control-left{
         left: 65px !important;
-        top: 50% !important;
+            top: 37% !important;
      }
     .carousel-inner{
         max-height: 442px;
@@ -1545,13 +1613,13 @@
     .testimonal p.general-legal {
         display: none;
     }
-    .testimonal a {
+    .testimonal .padding-remove a {
         display: block;
         background-color: red;
         padding: 10px 11px;
         text-transform: uppercase;
         color: #ffffff;
-        margin: 66px auto;
+        margin: 30px auto;
         font-family: 'LatoWebBold';
         font-size: 21px;
         letter-spacing: 1px;
@@ -1679,6 +1747,105 @@
         padding: 0 30px 0px 30px;
     }
 }
+@media (min-width: 650px) and (max-width: 667px) { 
+.padding-remove {
+    margin-top: 20%;
+    margin-bottom: 2%;
+}
+.flot_right {
+    float: none;
+    padding-bottom: 50px;
+}
+.testimonal .padding-remove a {
+    display: block;
+    background-color: red;
+    padding: 10px 11px;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin: 26px auto;
+    font-family: 'LatoWebBold';
+    font-size: 21px;
+    letter-spacing: 1px;
+    width: 240px;
+    text-decoration: none;
+}
+.fancybox-buttons {
+        top: -108px !important;
+        right: 179px !important;
+    }
+    .fancybox-caption-wrap {
+        width: 400px;
+    }
+    .fancybox-button.fancybox-button--left {
+        left: 134px;
+    }
+    .fancybox-button.fancybox-button--right {
+        right: 179px;
+    }
+    .fancybox-controls {
+        top: 157px !important;
+    }
+    .fancybox-slider,
+    .fancybox-slider-wrap {
+        width: 400px;
+    }
+    .legal-text p {
+    margin-top: 111px;
+    }
+    .carousel-indicators {
+    bottom: -50px;
+    }
+    .right-section {
+        width: 31.333%;
+    }
+    .carousel-control .glyphicon-chevron-right {
+        width: 35px;
+    }
+    .fotos-control-right, .fotos-control-left {
+        display: none;
+    }
+    .carousel-inner {
+        max-height: 375px;
+    }
+    .slider-third-2 {
+        left: 0px;
+        height: 360px;
+    }
+    .slider-third-1 {
+        left: 0px;
+    }
+    .pading {
+         padding-left: 0;
+        text-align: center;
+    }
+    blockquote {
+        width: 284px;
+    }
+    blockquote::before {
+         left: -13px;
+        top: 18px;
+    }
+    blockquote.end {
+        top: 35px;
+        left: 194px !important;
+    }
+    #lightboxOverlay {
+        top:3415px;
+    }
+    #lightbox {
+         top: 3468px !important;
+    }
+    .six-sectoion h2 {
+        font-size: 32px;
+    }
+    #seven .asesor ul li.mail {
+        background-position: 36% 60%;
+    }
+    #fild5-error {
+        left: 155px;
+    }
+
+}
 @media (min-width: 615px) and (max-width: 640px) {
     .navbar-header {
         float: none !important;
@@ -1691,8 +1858,33 @@
     .form-section .form-group {
         text-align: left;
     }
+	.fancybox-buttons {
+        top: -123px !important;
+        right: 192px !important;
+    }
+
 }
 @media (min-width: 550px) and (max-width: 568px) {
+.fancybox-buttons {
+         top: -113px !important;
+    right: 229px !important;
+    }
+    .fancybox-caption-wrap {
+        width: 400px;
+    }
+    .fancybox-button.fancybox-button--left {
+        left: 81px;
+    }
+    .fancybox-button.fancybox-button--right {
+        right: 225px;
+    }
+    .fancybox-controls {
+        top: 133px !important;
+    }
+    .fancybox-slider,
+    .fancybox-slider-wrap {
+        width: 400px;
+    }
 .navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
     max-height: 270px;
 }
@@ -1737,6 +1929,17 @@
     }
 }
 @media (max-width: 480px) {
+.fancybox-caption-wrap {
+        bottom: 4vh !important;
+    }
+    .fancybox-slider,
+    .fancybox-slider-wrap {
+        width: 100%;
+    }
+    .fancybox-caption-wrap {
+        width: 100%;
+        padding: 0 10px !important;
+    }
     .right-description ul {
         padding: 0 24px;
     }
@@ -1915,6 +2118,19 @@
 }
 
 @media (min-width: 400px) and (max-width: 414px) {
+.fancybox-buttons {
+        top: -108px !important;
+        right: 314px !important;
+    }
+   .fancybox-controls {
+        top: 46.5vh !important;
+    }
+    .fancybox-button.fancybox-button--left {
+        left:12px;
+    }
+    .fancybox-button.fancybox-button--right {
+        right: 314px;
+    }
 .col-xs-3 {
     width: 24%;
 }
@@ -1960,6 +2176,7 @@
     }
     .carousel-control.left {
             top: 40%;
+			left: 25px;
 		    
     }
     .carousel-control.right {
@@ -1990,7 +2207,7 @@
     }
 .slider-third-1 {
     right: 0px;
-    top: 20px;
+    top: 50px;
     width: 100%;
 }
     .right-description ul{
@@ -2162,6 +2379,25 @@ margin-left:-55px;
 }
 
 @media (min-width: 361px) and (max-width: 375px) {
+.fancybox-button.fancybox-button--left {
+        left: 11px;
+    }
+    .fancybox-button.fancybox-button--right {
+        right: 348px;
+    }
+    .fancybox-buttons {
+        top: -13.5vh !important;
+        right: 348px !important;
+    }
+	 .fancybox-slider,
+    .fancybox-slider-wrap {
+        width: 100%;
+    }
+    .fancybox-caption-wrap {
+        /*bottom: 119px !important;*/
+        
+        padding: 0 10px !important;
+    }
 .col-md-6.col-sm-6.fl {
           max-width: 100%;
     }
@@ -2300,7 +2536,8 @@ margin-left:-55px;
         padding-top: 36px;
     }
     .fotos-control-left {
-        left: 16px !important;
+            left: 16px !important;
+    top: 37% !important;
     }
     .second-section {
         background: none;
@@ -2322,7 +2559,9 @@ margin-left:-55px;
         font-size: 14px;
     }
     .carousel-control.left {
-        top:35%;
+       
+		    top: 35%;
+    left: 27px;
     }
     .carousel-control.right {
         top: 35%;
@@ -2444,6 +2683,16 @@ margin-left:-55px;
 	
 }
 @media (min-width: 350px) and (max-width: 360px) {
+.fancybox-button.fancybox-button--left {
+        left: 13px;
+    }
+    .fancybox-button.fancybox-button--right {
+        right: 364px;
+    }
+    .fancybox-buttons {
+        top: -85px !important;
+        right: 363px !important;
+    }
 .bottom-icon ul li {
     font-size: 6px;
 }
@@ -2645,7 +2894,19 @@ margin-left:-55px;
 }
 }
 @media (max-width: 320px) {
-
+.logo_image{
+     padding-top: 75px;
+}
+.fancybox-buttons {
+        top: -77px !important;
+        right: 401px !important;
+    }
+    .fancybox-button.fancybox-button--left {
+        left: 10px;
+    }
+    .fancybox-button.fancybox-button--right {
+        right: 402px;
+    } 
 
 .col-md-6.col-sm-6.fl {
           max-width: 100%;
@@ -2768,8 +3029,13 @@ margin-left:-55px;
         padding-top: 36px;
     }
     .fotos-control-left {
-        left: 16px !important;
+            left: 15px !important;
+    top: 31% !important;
     }
+	.fotos-control-right {
+    right: 10px !important;
+    top: 31% !important;
+}
     .second-section {
         background: none;
     }
@@ -2791,6 +3057,7 @@ margin-left:-55px;
     }
     .carousel-control.left {
         top:30%;
+		    left: 25px;
     }
     .carousel-control.right {
         top: 30%;
@@ -2859,6 +3126,10 @@ margin-left:-55px;
         font-size: 17px;
         padding: 0 15px;
     }
+	.flot_right {
+    float: none;
+    padding-bottom: 50px;
+}
     #mobile_btn {
         padding: 10px 8px !important;
     }
