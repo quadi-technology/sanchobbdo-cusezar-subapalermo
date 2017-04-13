@@ -9,6 +9,7 @@ body {
        padding-bottom: 0px;
     padding-top: 100px;
 }
+
 .navbar-inverse.menu-custom .navbar-nav> li a.active{
     height: 70px;
     background-image: linear-gradient(to bottom, #be181c 0%, #be181c 100%);
@@ -49,6 +50,9 @@ body {
 
 .navbar-inverse.menu-custom .navbar-nav> li:hover a.leg {
     background: transparent;
+}
+.plans-info .item .col-md-6.col-sm-6 a {
+    display: block !important;
 }
 .flot_right{
 float:right;
