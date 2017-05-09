@@ -5,6 +5,15 @@ body {
 body {
         -ms-overflow-style: none;
     }
+    #seven .asesor ul li.mail a:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 20px;
+    top: 0;
+    left: -8px;
+    background: url(../image/mail_icon.png) no-repeat left;
+}
 #album-de-fotos1 {
        padding-bottom: 0px;
     padding-top: 100px;
@@ -561,10 +570,12 @@ blockquote.end {
     font-size: 14px;
     color: #a5a5a5;
     text-transform: lowercase;
+    position: relative;
+    padding-left: 23px;
 }
-#seven .asesor ul li.mail {
+#/*seven .asesor ul li.mail {
     background: url("../image/mail_icon.png") no-repeat left;
-}
+}*/
 #seven h6.title {
     font-family: 'LatoWebBold';
     font-size: 17px;

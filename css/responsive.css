@@ -13,7 +13,7 @@
         left: 235px;
     }
     .carousel-caption {
-        top: 18%;
+        top: 8%;
         left: 22%;
     }
 }
@@ -31,11 +31,11 @@
 }
 @media (max-width: 1300px) {
     .carousel-control.left {
-        top: 38%;
+        top: 45%;
         left: 320px;
     }
     .carousel-control.right {
-        top: 38%;
+        top: 45%;
         right: 117px;
     }
     #lightboxOverlay {
@@ -51,14 +51,14 @@
     }
     .carousel-control.left {
         left: 193px;
-        top: 56%;
+        top: 47%;
     }
     .carousel-control.right {
-        top: 56%;
+        top: 47%;
     }
     .carousel-caption {
         left: 19%;
-        top: 19%;
+        top: 8%;
     }
 }
 @media (max-width: 778px) {
@@ -676,12 +676,12 @@
         /*display: none;*/
     }
     .carousel-control.left {
-           left: 40px;
-    top: 40%;
+           left: 40px !important;
+    top: 43% !important;
     }
     .carousel-control.right {
-               right: 40px;
-    top: 40%;
+               right: 40px !important;
+    top: 43% !important;
     }
 	.second-section {
     padding: 70px 0 0px;
@@ -1018,6 +1018,14 @@
 }
 }
 @media only screen and (min-width: 730px) and (max-width: 736px) {
+    .carousel-control.right {
+    right: 35px !important;
+    top: 44% !important;
+    }
+    .carousel-control.left {
+    left: 40px !important;
+    top: 44% !important;
+    }
 .flot_right {
     float: none;
     padding-bottom: 50px;
@@ -1329,7 +1337,7 @@
     .navbar-inverse.menu-custom .navbar-nav > li > a {
         width: 100%;
         font-size: 16px;
-        padding: 7px 10px;
+        /*padding: 7px 10px;*/
         line-height: 17px;
     }
     .navbar-inverse .navbar-collapse {
@@ -1450,7 +1458,7 @@ fancybox-caption-wrap {
     }
 
 .navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
-    max-height: 310px;
+    max-height: 270px;
 }
 .col-md-6.col-sm-6.fl {
           max-width: 100%;
@@ -1657,7 +1665,7 @@ fancybox-caption-wrap {
     .navbar-inverse.menu-custom .navbar-nav > li > a {
         width: 100%;
         font-size: 16px;
-        padding: 7px 10px;
+        /*padding: 7px 10px;*/
         line-height: 17px;
     }
     .navbar-inverse .navbar-collapse {
@@ -1847,6 +1855,14 @@ fancybox-caption-wrap {
 
 }
 @media (min-width: 615px) and (max-width: 640px) {
+    .carousel-control.right {
+    right: 27px !important;
+    top: 44% !important;
+    }
+    .carousel-control.left {
+    left: 30px !important;
+    top: 44% !important;
+    }
     .navbar-header {
         float: none !important;
     }
@@ -1865,6 +1881,14 @@ fancybox-caption-wrap {
 
 }
 @media (min-width: 550px) and (max-width: 568px) {
+    .carousel-control.right {
+    right: 30px !important;
+    top: 42% !important;
+    }
+    .carousel-control.left {
+    left: 32px !important;
+    top: 42% !important;
+    }
 .fancybox-buttons {
          top: -113px !important;
     right: 229px !important;
@@ -1928,6 +1952,31 @@ fancybox-caption-wrap {
         text-align: left;
     }
 }
+@media (min-width: 460px) and (max-width: 480px){
+    .fancybox-buttons{
+        top:-142px !important;
+        right:249px !important;
+        }
+    .fancybox-button.fancybox-button--right{
+        right:249px;
+        }
+    .fancybox-button.fancybox-button--left{
+        left:14px;
+        }
+    .carousel-control.left {
+    left: 15px !important;
+    top: 43% !important;
+    }
+    .carousel-control.right {
+    top: 43% !important;
+    right: 12px !important;
+    }
+        ./*four-sec-title {
+    margin-bottom: 18px;
+    padding-top: 0px;
+}*/
+    }
+
 @media (max-width: 480px) {
 .fancybox-caption-wrap {
         bottom: 4vh !important;
@@ -1953,7 +2002,7 @@ fancybox-caption-wrap {
         padding-top: 32px;
     }
     .carousel-inner {
-        max-height: 324px;
+        max-height: 245px;
     }
 
     #seven .asesor ul li.mail {
@@ -2175,18 +2224,19 @@ fancybox-caption-wrap {
        background-position: 27% 61%;
     }
     .carousel-control.left {
-            top: 40%;
-			left: 25px;
+            top: 45% !important;
+			left: 15px !important;
 		    
     }
     .carousel-control.right {
-        top:40%;
+        top:45% !important;
+        right: 12px !important
     }
     .carousel-caption h3 {
         font-size: 14px;
     }
     .carousel-caption {
-        top: 5%;
+        top: 2%;
         left: 15%;
     }
     .img_360{
@@ -2336,7 +2386,7 @@ clear:both;
     width: 25px;
 }
 #espacios-que-enamoran .carousel-control .glyphicon-chevron-left{
-margin-left:-55px;
+margin-left:0px;
 }
 #espacios-que-enamoran .carousel-control .glyphicon-chevron-right{
     margin-right: 0px;
@@ -2559,12 +2609,12 @@ margin-left:-55px;
         font-size: 14px;
     }
     .carousel-control.left {
-       
-		    top: 35%;
-    left: 27px;
+    left: 25px !important;
+    top: 45% !important;
     }
     .carousel-control.right {
-        top: 35%;
+        top: 45% !important;
+        right: 22px !important;
     }
 	#conoce-el-proyecto {
     padding-top: 100px;
@@ -2668,7 +2718,7 @@ margin-left:-55px;
 
 .glyphicon.glyphicon-chevron-right {
     width: 35px;
-	    margin-right: 7px;
+	    margin-right: 0px;
 }
    #lightboxOverlay {
    top: 3305px;
@@ -2739,23 +2789,23 @@ margin-left:-55px;
         background-position: 24% 61%;
     }
     .carousel-control.left {
-          top: 35%;
-    left: 10px;
+    top: 45% !important;
+    left: 10px !important;
 		    
     }
     .carousel-control.right {
-        top: 35%;
-		    right: 0px;
+        top: 45% !important;
+		right: 10px !important;
     }
 	.carousel-control .glyphicon-chevron-right, .carousel-control .icon-next {
-    margin-right: 15px;
+    margin-right: 0px;
     width: 25px !important;
 }
     .carousel-caption h3 {
         font-size: 14px;
     }
     .carousel-caption {
-        top: 5%;
+        top: 3%;
         left: 15%;
     }
     .img_360{
@@ -2887,7 +2937,7 @@ clear:both;
     width: 25px;
 }
 #espacios-que-enamoran .carousel-control .glyphicon-chevron-left{
-margin-left:-55px;
+margin-left:0px;
 }
 #espacios-que-enamoran .carousel-control .glyphicon-chevron-right{
     margin-right: 0px;
@@ -3056,11 +3106,12 @@ margin-left:-55px;
         font-size: 14px;
     }
     .carousel-control.left {
-        top:30%;
-		    left: 25px;
+        top:44% !important;
+		left: 10px !important;
     }
     .carousel-control.right {
-        top: 30%;
+        top: 44% !important;
+        right: 0 !important;
     }
     .navbar-header {
         float: none !important;
