@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
    <head>
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
       <title>Cusezar Suba-Palermo</title>
-      <link rel="icon" href="image/fevicon.png" type="fevicon.png">
+      <link rel="icon" href="image/fevicon.png">
       <link rel="stylesheet" href="css/normalize.css">
       <link rel="stylesheet" href="css/bootstrap.min.css">
       <link rel="stylesheet" href="css/bootstrap.css">
@@ -33,7 +33,7 @@
    <body>
       <div class="container-fluid">
          <div class="menu-nav">
-            <nav class="navbar navbar-inverse navbar-fixed-top menu-custom js__navigator_banner" role="navigation" id="sticky">
+            <nav class="navbar navbar-inverse navbar-fixed-top menu-custom js__navigator_banner" id="sticky">
                <div class="container">
                   <!-- Brand and toggle get grouped for better mobile display -->
                   <div class="navbar-header col-md-2">
@@ -44,14 +44,14 @@
                      <span class="icon-bar"></span>
                      </button>
                      <a class="navbar-brand" href="#inicio">
-                     <img src="image/logo_new.png" alt="">
+                     <img src="image/logo_new.png" alt="logo_new">
                      </a>
                   </div>
                   <!-- Collect the nav links, forms, and other content for toggling -->
                   <div class="collapse navbar-collapse col-xs-10 " id="bs-example-navbar-collapse-1">
                      <ul class="nav navbar-nav">
                         <li><a href="#album-de-proyecto" class="menu-icon-1">DESCRIPCIÓN DE PROYECTO</a></li>
-                        <li><a href="#espacios-que-enamoran" class="menu-icon-2"><span>GALERÍA DE FOTOS</a></li>
+                        <li><a href="#espacios-que-enamoran" class="menu-icon-2">GALERÍA DE FOTOS</a></li>
                         <li><a href="#conoce-nuestros-apartamentos" class="menu-icon-3 width-third">Conoce los apartamentos</a></li>
                         <li><a href="#album-de-fotos1" class="menu-icon-1">Lugares para enamorarse</a></li>
                         <li><a href="#mas-cerca-de-la-tranquilidad" class="menu-icon-4">UBICACIÓN DE PROYECTO</a></li>
@@ -59,7 +59,7 @@
                            <div class="contact-button">
                               <button type="button" class="btn btn-success" id="contnt-btn">contacto</button>
                               <div class="pupup-form">
-                                 <span class="close-icon clearfix"><img src="image/close.png"/></span>
+                                 <span class="close-icon clearfix"><img src="image/close.png" alt="close" /></span>
                                  <div class="form-section">
                                     <h2>Lorem ipsum ullam corper aliquam</h2>
                                     <p>euismod, maecenas quisque</p>
@@ -74,18 +74,18 @@
                                           } 
                                        </script> 
                                     </div>
-                                    <form role="form"  class="from-type" name="myForm1"  action="validation2.php" method="post">
+                                    <form class="from-type" name="myForm1" action="validation2.php" method="post">
                                        <div class="form-group col-md-12">
                                           <div class="col-md-3">
                                              <label for="fild1">Nombre completo</label>
                                           </div>
                                           <div class="col-md-9">
-                                             <input type="text"  name="fild1" class="form-control" autocomplete="off">
+                                             <input type="text" id="fild1"  name="fild1" class="form-control" autocomplete="off">
                                           </div>
                                        </div>
                                        <div class="form-group col-md-12">
                                           <div class="col-md-3">
-                                             <label for="fild2">Correo Electrónico</label>                     
+                                             <label for="email-val1">Correo Electrónico</label>                     
                                           </div>
                                           <div class="col-md-9">
                                              <input type="email" name="fild2" class="form-control" id="email-val1" autocomplete="off">
@@ -96,7 +96,7 @@
                                              <label for="fild3">Teléfono</label>
                                           </div>
                                           <div class="col-md-9">
-                                             <input type="number" onKeyPress="return isNumberKey(event)" name="fild3" class="form-control" autocomplete="off">
+                                             <input type="number" id="fild3" onKeyPress="return isNumberKey(event)" name="fild3" class="form-control" autocomplete="off">
                                           </div>
                                        </div>
                                        <div class="form-group col-md-12">
@@ -104,7 +104,7 @@
                                              <label for="fild4">Celular</label> 
                                           </div>
                                           <div class="col-md-9">
-                                             <input type="number" name="fild4" onKeyPress="return isNumberKey(event)" class="form-control" autocomplete="off">
+                                             <input type="number" id="fild4" name="fild4" onKeyPress="return isNumberKey(event)" class="form-control" autocomplete="off">
                                           </div>
                                        </div>
                                        <div class="checkbox col-md-12 text-center">
@@ -112,10 +112,10 @@
                                           <input type="checkbox" name="fild5" checked><a class="leg" href="http://www.cusezar.com/terminos_cusezar.html" target="_blank"> Acepto términos y condiciones</a></label>
                                        </div>
                                        <div class="col-md-12 col-xs-12  text-center">
-                                          <label for="check">
+                                          <!-- <label for="check"> -->
                                              <div id="recaptcha1" style="transform:scale(0.77);-webkit-transform:scale(0.77);transform-origin:center center;-webkit-transform-origin:center center;"></div>
                                              <!-- <div class="g-recaptcha" data-sitekey="6LcZdCcTAAAAAA_WgkrVACqhcPgbBGoQgTCrCrqy"></div>-->
-                                          </label>
+                                          <!-- </label> -->
                                        </div>
                                        <div class="left-right-padding form-group center-block col-md-12 ">
                                           <button type="submit" class="btn btn-default text-center">CONTÁCTANOS</button>
@@ -206,38 +206,39 @@
          </div>
       </section>
       <section id="conoce-el-proyecto" class="container-fluid second-section">
+      <h2 style="display: none;">Text</h2>
          <div class="container">
             <div class="row">
                <div class="col-sm-3 col-xs-12 center-block icon-block">
-                  <img src="image/section-section-icon-1.png" class="img-responsive center-block" />
+                  <img src="image/section-section-icon-1.png" class="img-responsive center-block" alt="section-section-icon-1" />
                   <ul>
                      <li class="text-bold">Estrato</li>
                      <li>4</li>
                   </ul>
                </div>
                <div class="col-sm-3 col-xs-12 center-block icon-block">
-                  <img src="image/section-section-icon-2.png" class="img-responsive center-block" />
+                  <img src="image/section-section-icon-2.png" class="img-responsive center-block" alt="section-section-icon-2" />
                   <ul>
                      <li class="text-bold">Torres</li>
                      <li>2</li>
                   </ul>
                </div>
                <div class="col-sm-3 col-xs-12 center-block icon-block">
-                  <img src="image/section-section-icon-3.png" class="img-responsive center-block" />
+                  <img src="image/section-section-icon-3.png" class="img-responsive center-block" alt="section-section-icon-3" />
                   <ul>
                      <li class="text-bold">Apartamenos por piso</li>
                      <li>4</li>
                   </ul>
                </div>
                <div class="col-sm-3 col-xs-12 center-block icon-block">
-                  <img src="image/section-section-icon-4.png" class="img-responsive center-block" />
+                  <img src="image/section-section-icon-4.png" class="img-responsive center-block" alt="section-section-icon-4" />
                   <ul>
                      <li class="text-bold">Pisos</li>
                      <li>9</li>
                   </ul>
                </div>
                <div class="col-sm-3 col-xs-12 center-block icon-block">
-                  <img src="image/section-section-icon-5.png" class="img-responsive center-block" />
+                  <img src="image/section-section-icon-5.png" class="img-responsive center-block" alt="section-section-icon-5" />
                   <ul>
                      <li class="text-bold">Ascensores</li>
                      <li>1</li>
@@ -456,21 +457,21 @@
                      <div class="item active">
                        <div class="col-md-6 col-sm-6 flot_right">
 						      <a href="image/planos_Inmuebles_Properties/plan1.jpg" data-fancybox="group"> 
-                           <img src="image/planos_Inmuebles_Properties/plan1.png" class="img-responsive desktop"/>
-                           <img src="image/planos_Inmuebles_Properties/plan1.jpg" class="img-responsive mobile"/>
+                           <img src="image/planos_Inmuebles_Properties/plan1.png" class="img-responsive desktop" alt="plan1" />
+                           <img src="image/planos_Inmuebles_Properties/plan1.jpg" class="img-responsive mobile" alt="plan1" />
 						   </a>
 						   
                            <div class="col-md-12 mobile-none">
                               <div class="col-md-4 col-xs-4 col-sm-4 text-center border-right">
-                                 <img src="image/shwore.png" class="img-responsive center-block" />
+                                 <img src="image/shwore.png" class="img-responsive center-block" alt="shwore" />
                                  <p>2<br/>Baños</p>
                               </div>
                               <div class="col-md-4 col-xs-4 col-sm-4 text-center border-right">
-                                 <img src="image/bed.png" class="img-responsive center-block" />
+                                 <img src="image/bed.png" class="img-responsive center-block" alt="bed" />
                                  <p>3+Estar<br/>Estudio</p>
                               </div>
                               <div class="col-md-4 col-xs-4 col-sm-4  text-center border-right">
-                                 <img src="image/room.png" class="img-responsive center-block" />
+                                 <img src="image/room.png" class="img-responsive center-block" alt="room" />
                                  <p>1 Sencillo, cubierto<br/>Depósito</p>
                               </div>
                            </div>
@@ -513,7 +514,6 @@
                            <div class="content">
                               <span class="content-title">
                                 Apartamentos Tipo 01-08 
-                                 <div class="clearfix"></div>
                               </span>
                               <div class="content-detail">
                                  <ul>
@@ -535,20 +535,20 @@
                      <div class="item">
                       <div class="col-md-6 col-sm-6 flot_right">
 						     <a href="image/planos_Inmuebles_Properties/plan2.jpg" data-fancybox="group"> 
-                           <img src="image/planos_Inmuebles_Properties/plan2.png" class="img-responsive desktop"/>
-                           <img src="image/planos_Inmuebles_Properties/plan2.jpg" class="img-responsive mobile"/>
+                           <img src="image/planos_Inmuebles_Properties/plan2.png" class="img-responsive desktop" alt="plan2" />
+                           <img src="image/planos_Inmuebles_Properties/plan2.jpg" class="img-responsive mobile" alt="plan2" />
 						   </a>
                            <div class="col-md-12 mobile-none">
                               <div class="col-md-4 col-xs-4 col-sm-4 text-center border-right">
-                                 <img src="image/shwore.png" class="img-responsive center-block" />
+                                 <img src="image/shwore.png" class="img-responsive center-block" alt="shwore" />
                                  <p>2<br/>Baños</p>
                               </div>
                               <div class="col-md-4 col-xs-4 col-sm-4 text-center border-right">
-                                 <img src="image/bed.png" class="img-responsive center-block" />
+                                 <img src="image/bed.png" class="img-responsive center-block" alt="bed" />
                                  <p>2<br/>Estudio</p>
                               </div>
                               <div class="col-md-4 col-xs-4 col-sm-4  text-center border-right">
-                                 <img src="image/room.png" class="img-responsive center-block" />
+                                 <img src="image/room.png" class="img-responsive center-block" alt="room" />
                                  <p>1<br/>Depósito</p>
                               </div>
                            </div>
@@ -591,7 +591,6 @@
                            <div class="content">
                               <span class="content-title">
                                  Apartamentos Tipo 03-04
-                                 <div class="clearfix"></div>
                               </span>
                               <div class="content-detail">
                                  <ul>
@@ -691,7 +690,7 @@
                   <h2>Encuéntranos aquí</h2>
                   <div class="bottom-icon">
                      <div class="col-md-3 col-xs-6 col-sm-6 center-block">
-                        <img class="img-responsive center-block" src="image/Encuentranos-aqui/map.png">
+                        <img class="img-responsive center-block" src="image/Encuentranos-aqui/map.png" alt="map">
                         <ul>
                            <li class="text-bold">Dirección:</li>
                            <li>Calle 150 A # 96 A - 90 Entrada por el conjunto, Suba-Pinar</li>
@@ -699,21 +698,21 @@
 
                      </div>
                      <div class="col-md-3 col-xs-6 col-sm-6 center-block">
-                        <img class="img-responsive center-block" src="image/Encuentranos-aqui/msg.png">
+                        <img class="img-responsive center-block" src="image/Encuentranos-aqui/msg.png" alt="msg">
                         <ul>
                            <li class="text-bold">Email:</li>
                            <li>Paula Sabogal <br>palermo@cusezar.com</li>
                         </ul>
                      </div>
                      <div class="col-md-3 col-xs-6 col-sm-6 center-block mobile-view">
-                        <img class="img-responsive center-block" src="image/Encuentranos-aqui/clock.png">
+                        <img class="img-responsive center-block" src="image/Encuentranos-aqui/clock.png" alt="clock">
                         <ul>
                            <li class="text-bold">Horario:</li>
                            <li>Lunes a domingo de 9:30 a. m. a 5:30 p. m.</li>
                         </ul>
                      </div>
                      <div class="col-md-3 col-xs-6  col-sm-6 center-block mobile-view">
-                        <img class="img-responsive center-block" src="image/Encuentranos-aqui/phone.png">
+                        <img class="img-responsive center-block" src="image/Encuentranos-aqui/phone.png" alt="phone">
                         <ul>
                            <li class="text-bold">Teléfono:</li>
                            <li>(320) 488 2813</li>
@@ -725,6 +724,7 @@
          </div>
       </section>
       <section class="Maplocation">
+      <h2 style="display: none;"></h2>
          <div id="map"></div>
       </section>
       <section id="seven" class="container-fluid seven-section container">
@@ -762,7 +762,7 @@
             <div class="row">
                <div class="col-md-6 col-sm-6 fr">
                   <div class="col-md-12 footer-content">
-                     <img src="image/footer-logo.png" class="img-responsive">
+                     <img src="image/footer-logo.png" class="img-responsive" alt="footer-logo">
                      <p>Cuando se trata de comprar hogar, en Cusezar nos ponemos en los zapatos de nuestros clientes. Pasamos días trabajando para enamorarlos, hacemos que su corazón lata tanto como el nuestro cada vez que abren la puerta de su nuevo hogar. Sabemos que es la compra más importante de sus vidas, hacemos todo para que sea perfecto, porque sabemos que la mejor compra viene de lo que dice el corazón. Cusezar. creamos valor para siempre.</p>
                      <div class="col-md-4 col-xs-4 addressblk">
                         <p>Av. Cll 116 N° 7 – 15 Int 2 Piso 15 y 16. </p>
@@ -803,18 +803,18 @@
                            
                         </script>
                      </div>
-                     <form role="form" class="from-type" name="myForm"  action="validation.php" method="post">
+                     <form class="from-type" name="myForm"  action="validation.php" method="post">
                         <div class="form-group col-md-12 col-xs-12 ">
                            <div class="col-md-2 col-xs-12 padding-remove">
-                              <label for="fild1">Nombre completo</label>
+                              <label for="fild1_1">Nombre completo</label>
                            </div>
                            <div class="col-md-10 col-xs-12 pull-right">
-                              <input type="text"  name="fild1" class="form-control" autocomplete="off">
+                              <input type="text" id="fild1_1" name="fild1" class="form-control" autocomplete="off">
                            </div>
                         </div>
                         <div class="form-group col-md-12 col-xs-12">
                            <div class="col-md-2 col-xs-12 padding-remove">
-                              <label for="fild2">Correo Electrónico</label> 
+                              <label for="email-val">Correo Electrónico</label> 
                            </div>
                            <div class="col-md-10  col-xs-12 pull-right">
                               <input type="email" name="fild2" class="form-control" id="email-val" autocomplete="off">
@@ -822,33 +822,31 @@
                         </div>
                         <div class="form-group col-md-12 col-xs-12">
                            <div class="col-md-2 col-xs-12 padding-remove">
-                              <label for="fild3">Teléfono</label>
+                              <label for="fild3_1">Teléfono</label>
                            </div>
                            <div class="col-md-10  col-xs-12 pull-right">
-                              <input type="number" name="fild3" onKeyPress="return isNumberKey(event)" class="form-control" autocomplete="off">
+                              <input type="number" id="fild3_1" name="fild3" onKeyPress="return isNumberKey(event)" class="form-control" autocomplete="off">
                            </div>
                         </div>
                         <div class="form-group col-md-12 col-xs-12">
                            <div class="col-md-2 col-xs-12 padding-remove">
-                              <label for="fild4">Celular</label>   
+                              <label for="fild4_1">Celular</label>   
                            </div>
                            <div class="col-md-10  col-xs-12 pull-right">
-                              <input type="number" onKeyPress="return isNumberKey(event)" name="fild4" class="form-control" autocomplete="off">
+                              <input type="number" id="fild4_1" onKeyPress="return isNumberKey(event)" name="fild4" class="form-control" autocomplete="off">
                            </div>
                         </div>
                         <div class="checkbox col-md-12 col-xs-12 text-center">
                            <label for="fild5">
-                           <input type="checkbox" name="fild5" checked> <a href="http://www.cusezar.com/terminos_cusezar.html" target="_blank">Acepto términos y condiciones</a></label>
+                           <input type="checkbox" id="fild5" name="fild5" checked> <a href="http://www.cusezar.com/terminos_cusezar.html" target="_blank">Acepto términos y condiciones</a></label>
                         </div>
                         <div class="col-md-12 col-xs-12  text-center">
-                           <label for="check">
-
+                           <!-- <label for="check">
+ -->
                               <div id="recaptcha2" style="transform:scale(0.77);transform-origin:center"></div>
 
-                              <div id="recaptcha2" style="transform:scale(0.77);-webkit-transform:scale(0.77);transform-origin:center center;-webkit-transform-origin:center center;"></div>
-
                               <!-- <div class="g-recaptcha" data-sitekey="6LeNKCkTAAAAAIrEffYbb_F2UHFZ-gWEsVVtGa-z"></div> -->
-                           </label>
+                           <!-- </label> -->
                         </div>
                         <div class="form-group center-block">
                            <button type="submit" class="btn btn-default text-center">QUIERO QUE ME LLAMEN</button>
