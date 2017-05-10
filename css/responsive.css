@@ -892,7 +892,7 @@
         display: none !important;
     }
     .content {
-        display: none;
+        display: block;
     }
     .slider-third-1 {
         right: 0px;
@@ -1016,6 +1016,40 @@
     top: 17px;
     color: red;
 }
+}
+@media only screen and (min-width: 680px) and (max-width: 684px) {
+.fancybox-buttons {
+        top: -129px !important;
+        right: 171px !important;
+    }
+    .fancybox-caption-wrap {
+        width: 400px;
+    }
+    .fancybox-button.fancybox-button--left {
+        left: 142px;
+    }
+    .fancybox-button.fancybox-button--right {
+        right: 170px;
+    }
+    .fancybox-controls {
+        top: 184px !important;
+    }
+    .fancybox-slider,
+    .fancybox-slider-wrap {
+        width: 400px;
+    }
+    .flot_right {
+    float: none;
+    padding-bottom: 50px;
+    }
+    .plans-info {
+    max-height: 780px !important;
+    }
+    .padding-remove {
+    margin-top: 15%;
+    margin-bottom: 2%;
+    }
+    
 }
 @media only screen and (min-width: 730px) and (max-width: 736px) {
     .carousel-control.right {
