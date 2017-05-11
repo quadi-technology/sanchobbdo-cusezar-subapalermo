@@ -1706,18 +1706,18 @@ fancybox-caption-wrap {
         margin-top: 0;
     }
     blockquote.end {
-        left: 592px !important;
+        left: 558px !important;
     }
     blockquote.end {
         top: -5px;
     }
     blockquote::before {
         font-size: 73px;
-        left: 84px;
+        left: 71px;
         top: 35px;
     }
     blockquote {
-        width: 633px;
+        width: 100%;
         font-size: 16px;
         line-height: 19px;
     }
@@ -1914,6 +1914,18 @@ fancybox-caption-wrap {
     }
 
 }
+@media (min-width: 591px) and (max-width: 600px) {
+	.fancybox-buttons {
+	    top: -122px !important;
+	    right: 214px !important;
+	}
+	.fancybox-button.fancybox-button--right {
+    	right: 214px;
+	}
+	.fancybox-button.fancybox-button--left {
+    	left: 99px;
+	}
+}
 @media (min-width: 550px) and (max-width: 568px) {
     .carousel-control.right {
     right: 30px !important;
@@ -1987,6 +1999,12 @@ fancybox-caption-wrap {
     }
 }
 @media (min-width: 460px) and (max-width: 480px){
+	.carousel-inner {
+    max-height: 280px !important;
+	}
+	.carousel-caption {
+    top: 1% !important;
+	}
     .fancybox-buttons{
         top:-142px !important;
         right:249px !important;
@@ -2768,14 +2786,14 @@ margin-left:0px;
 }
 @media (min-width: 350px) and (max-width: 360px) {
 .fancybox-button.fancybox-button--left {
-        left: 13px;
+        left: 11px;
     }
     .fancybox-button.fancybox-button--right {
         right: 364px;
     }
     .fancybox-buttons {
-        top: -85px !important;
-        right: 363px !important;
+        top: -89px !important;
+        right: 364px !important;
     }
 .bottom-icon ul li {
     font-size: 6px;
@@ -2982,8 +3000,8 @@ margin-left:0px;
      padding-top: 75px;
 }
 .fancybox-buttons {
-        top: -77px !important;
-        right: 401px !important;
+        top: -80px !important;
+        right: 402px !important;
     }
     .fancybox-button.fancybox-button--left {
         left: 10px;
